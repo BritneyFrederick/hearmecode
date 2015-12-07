@@ -1,0 +1,23 @@
+bread = 0
+peanut_butter = 1
+jelly = 1
+
+if bread%2 == 0  and bread > 0 and peanut_butter >= 1 and jelly >= 1:
+	print "Hooray! I can make {0} PB&J sandwiches!" .format(bread / 2)
+elif bread%2 == 1 and peanut_butter >=1 and jelly >=1:
+	print "Hooray! I can make {0} PB&J sandwiches and at least 1 open-faced sandwich" .format(bread /2)
+else:
+	if bread >= 2 and peanut_butter >= 1 and jelly == 0:
+		print "Oops, need more jelly!"
+	elif bread >= 2 and peanut_butter == 0 and jelly >= 1:
+		print "Oops, need more peanut butter!"
+	elif bread < 2 and peanut_butter >= 1 and jelly >= 1:
+		print "Oops need more bread!"
+	elif bread <= 2 and peanut_butter == 0 and jelly >= 1:
+		print "Wow, I dont have enough bread OR peanut butter"
+	elif bread <= 2 and peanut_butter >= 1 and jelly == 0:
+		print "Wow, I dont have enough bread OR jelly"
+	elif bread >=2 and peanut_butter == 0 and jelly ==0:
+		print "Wow, I dont have enough peanut butter OR jelly"
+	else:
+		print "OMG!! I don't have ANY of the necessay ingredients smh"
